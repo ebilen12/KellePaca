@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<!-- Mirrored from quickabdest.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 05 Apr 2020 21:11:56 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>quickabdest</title>
+        <meta name="description" content="Abdest almak artık daha kolay!">
+        <meta name="author" content="mbpavilion">
+        <link href="index_files/style.css" rel="stylesheet">
+        <link rel="shortcut icon" href="index_files/favicon.ico">
+        <script async src="../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({
+                google_ad_client: "ca-pub-4907827220756480",
+                enable_page_level_ads: true
+            });
+        </script>
+    </head>
+    <body>
+        
+        <div class="header">
+            <img src="index_files/quickabdest.png">
+        </div>
+        
+
+        <div class="pg">
+            <img class="center" id="imgChange" onclick="play(); changeImage(); showme();" src="index_files/feelsbad.png">
+            <audio id="audio" src="index_files/sound.m4a"></audio>
+            <div id="showme" class="w3-container w3-center w3-animate-opacity">
+            <img class="center" src="index_files/abdestlendin.png">
+        </div>
+
+        <div class="pg">
+            <h2 id="hideme" class="text-center" onclick="play(); changeImage(); showme();" align="center">
+            <img class="center" src="index_files/abdestalmakicin.png">
+        </div>
+
+
+        <script src="index_files/jquery.min.js"></script>
+        <script src="index_files/bootstrap.min.js"></script>
+        <script src="index_files/scripts.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                var cookieValue = document.cookie.replace(/(?:(?:^|.*;\s*)bgColor\s*\=\s*([^;]*).*$)|^.*$/, "$1");
+                
+                if (cookieValue === "dark") {
+                    $('ul').toggleClass('active');
+                    $('body').toggleClass('dark');
+                }
+                
+                $('ul').click(function(){
+                    var cookieValue = document.cookie.replace(/(?:(?:^|.*;\s*)bgColor\s*\=\s*([^;]*).*$)|^.*$/, "$1");
+
+                    var expiration_date = new Date();
+                    expiration_date.setFullYear(expiration_date.getFullYear() + 1);
+                    
+                    if (cookieValue === "dark") {
+                        document.cookie = "bgColor=light; path=/; expires=" + expiration_date.toUTCString();
+                    } else {
+                        document.cookie = "bgColor=dark; path=/; expires=" + expiration_date.toUTCString();
+                    }
+                    $('ul').toggleClass('active');
+                    $('body').toggleClass('dark');
+                })
+            })
+        </script>
+        <script>
+                function play() {
+                    var audio = document.getElementById("audio");
+                    audio.play();
+                }
+        </script>
+        <script language="javascript">
+                function changeImage() {
+                    document.getElementById("imgChange").src = "index_files/feels.png";
+                }
+        </script>
+        <script>
+                function showme() {
+                    document.getElementById('showme').style.display = 'block';
+                    document.getElementById('hideme').style.display = 'none';
+                }
+        </script>
+    </body>
+
+<!-- Mirrored from quickabdest.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 05 Apr 2020 21:12:00 GMT -->
+</html>
